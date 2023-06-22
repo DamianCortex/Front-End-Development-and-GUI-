@@ -1,0 +1,39 @@
+<!-- This is a small little practice thing I did while beginning my lessons in Javascript -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Message Boxes</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" onclick="displayMessage('Hello')">Click me for 'Hello'</div>
+    <div class="box" onclick="displayMessage('Everyone')">Click me for 'Everyone'</div>
+
+    <script>
+        function displayMessage(message) {
+            alert(message);
+        }
+    </script>
+    <h1>Click on the boxes for a pop-up message</h1>
+</body>
+
+</html>
